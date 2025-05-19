@@ -38,3 +38,22 @@ form input, form textarea {
 .cta-button:hover {
   background-color: #555;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem; /* space between links */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
