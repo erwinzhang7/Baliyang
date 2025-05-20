@@ -1,0 +1,99 @@
+/* main.css - Main Content Styles */
+
+/* Main Content */
+.hero {
+  background-image: url('../images/background.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3e2723;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;   /* Bigger title */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem; /* Bigger subtitle */
+  margin-bottom: 2rem;
+}
+
+/* Keep call-to-action big and readable */
+.cta-button {
+  background-color: #3e2723;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #6B4F31;
+}
+
+.intro,
+.buy-sell {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+.intro h2,
+.buy-sell h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3e2723;
+}
+
+.intro p {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.buy-sell p {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.intro-images img {
+  height: 80px;
+  margin: 0 10px;
+}
+
+.buy-sell {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+}
+
+.buy-sell > div {
+  flex: 1 1 45%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}

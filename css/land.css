@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  transition: background-color 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Alternating black and white backgrounds */
+section:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+section:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+/* Add a pseudo-element to create the slanted divider effect */
+section:nth-child(n+2):not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Vertical height of the slant */
+  background: inherit;
+  clip-path: polygon(0 0, 33.33% 0, 66.66% 20px, 100% 20px, 100% 100%, 0 100%);
+  z-index: -1; /* Keep it behind the section content */
+}
+
+/* Add the fading effect, but ensure top section's background is the one that fades */
+section:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+section:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
