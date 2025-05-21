@@ -6,8 +6,7 @@
 }
 
 .contact-hero {
-  background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.8)),
-              url('../images/contact-hero.jpg') center/cover;
+  background: #3e2723;
   color: white;
   padding: 5rem 2rem;
   text-align: center;

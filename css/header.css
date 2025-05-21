@@ -17,6 +17,12 @@ header {
   height: 50px;
 }
 
+.company-link {
+  text-decoration: none !important; /* No underline */
+  color: inherit; /* Inherit color from parent */
+  display: flex;
+  align-items: center;
+}
 .company-name {
   font-size: 1.5rem;
   font-weight: bold;

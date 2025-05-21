@@ -57,16 +57,43 @@ p {
   color: white;
 }
 
+/* Split container for logo and text side-by-side */
 .why-choose {
   background-color: #faf8f2ff; /* Offwhite */
-  color: #2d3748;
+  color: #6B4F31; /* Dark text color */
+}
+.split-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* ensures responsiveness */
 }
 
-/* Adjust text colors for contrast */
-.why-choose h2 {
-  color: #6B4F31;
+.logo-side {
+  flex: 1;
+  text-align: center;
 }
 
-.why-choose p {
-  color: #6B4F31;
+.large-logo {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.split-container .split-content {
+  flex: 1;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split-container .split-content {
+    text-align: center;
+  }
 }
